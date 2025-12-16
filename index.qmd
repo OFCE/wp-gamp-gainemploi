@@ -4,13 +4,6 @@ subtitle: "Contradictions des politiques de lutte contre la pauvreté et pistes 
 keywords: Assistance, prime d'activité, smic, gains à l'emploi, trappes à inactivité
 abstract: "Depuis les réformes instaurant le RSA activité (2008) puis la prime d'activité (2016), l'emploi est toujours plus rémunérateur que l'inactivité. Toutefois, travailler ne garantit pas la sortie de la pauvreté. Cela s'explique notamment par le fait que le revenu minimum versé aux personnes d'âge actif est très faible et maintient la plupart du temps les personnes sans emploi sous le seuil de grande pauvreté : le travail paie plus que l'assistance, mais les travailleurs partent de trop bas. Des pistes de réforme sont proposées permettant de concilier les trois objectifs des pouvoirs publics: faire en sorte que le travail soit toujours rémunérateur ; faire en sorte que le travail protège de la pauvreté ; soutenir le revenu des ménages les plus modestes."
 
-author:
-  - name: Guillaume Allègre
-    email: guillaume.allegre@sciencespo.fr
-    affiliation: OFCE, Sciences Po Paris
-  - name: Muriel Pucci
-    email: muriel.pucci@gmail.com
-    affiliation: OFCE & Université Paris 1
 citation:
   type: article-journal
   container-title: "Document de travail de l'OFCE"
@@ -19,7 +12,7 @@ citation:
 annee: 2025
 wp: 24
 date: "2025-11-21"
-date-modified: today
+date-modified: "2025-11-21"
 lang: fr
 
 format:
@@ -27,7 +20,10 @@ format:
   wp-pdf:
     toc: false
     output-file: "OFCEWP2025-24.pdf"
+    tbl-pos: "H"
     
+authors-title: "Autrice et auteur et résumé"
+thanks: ""
 editor: visual
 bibliography: references.bib
 ---

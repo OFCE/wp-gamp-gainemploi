@@ -28,10 +28,18 @@ website:
         href: about.html
       - text: " "
         icon: github
-        href: https://gallegre.github.io/GainEemploi/
+        href: https://gallegre.github.io/GainEmploi/
 
 comments:
   hypothesis: true
 format:
   ofce-html: default
+  
+author:
+  - name: Guillaume Allègre
+    email: guillaume.allegre@sciencespo.fr
+    affiliation: OFCE, Sciences Po Paris
+  - name: Muriel Pucci
+    email: muriel.pucci@gmail.com
+    affiliation: OFCE & Université Paris 1
 

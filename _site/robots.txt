@@ -1,1 +1,1 @@
-Sitemap: https://gallegre.github.io/GainEemploi/sitemap.xml
+Sitemap: https://gallegre.github.io/GainEmploi/sitemap.xml
