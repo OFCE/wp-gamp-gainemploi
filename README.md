@@ -1,6 +1,6 @@
 La reprise d'emploi est-elle rémunératrice par rapport aux prestations sociales ? 
 
-Document de travail OFCE sur les gains à la reprise d'emploi
+Document de travail OFCE sur les gains à la reprise d'emploi. Site: https://gallegre.github.io/GainEmploi/ 
 
 Méthode. 
 
