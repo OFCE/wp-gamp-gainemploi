@@ -111,22 +111,8 @@ div.csl-indent {
 <script src="site_libs/girafe-binding-0.9.2/girafe.js"></script>
 
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -391,12 +377,12 @@ Encadré&nbsp;2: Taux effectif de prélèvement et taux effectif de gain à l’
 <div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>Outre la variation de revenu disponible du ménage, il est également possible de calculer un taux effectif de prélèvement (TEP) qui correspond à la baisse des transferts sociaux (nets d’impôt) par euro supplémentaire de revenu professionnel. Si, lorsque le revenu d’activité augmente de 1000 euros, les transferts sociaux nets baissent de 400 euros on dira que le TEP est de 40%. Dans ce cas, le revenu disponible augmente de 600 euros.</p>
-<p><span class="math display">
+<p><span class="math display">\[
 TEP=\frac{\text{-Variation des transferts sociaux nets}}{\text{Variation du revenu professionnel}}=1-\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}
-</span></p>
-<p>On peut définir le taux effectif de gain à l’emploi (TEG) comme la part de l’augmentation du revenu professionnel qui se traduit en augmentation du revenu disponible. Si lorsque le revenu d’activité augmente de 1000 euros, le revenu disponible augmente de 600 euros, on dira que le TEG est de 60%. <span class="math display">
+\]</span></p>
+<p>On peut définir le taux effectif de gain à l’emploi (TEG) comme la part de l’augmentation du revenu professionnel qui se traduit en augmentation du revenu disponible. Si lorsque le revenu d’activité augmente de 1000 euros, le revenu disponible augmente de 600 euros, on dira que le TEG est de 60%. <span class="math display">\[
 TEG=\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}
-</span></p>
+\]</span></p>
 </div>
 </div>
 </div>
@@ -481,7 +467,7 @@ Graphique&nbsp;5: Revenu disponible d’une famille avec un enfant gardé par sa
 <section id="disparité-du-taux-effectif-de-gain-à-lemploi-et-rôle-de-la-prime-dactivité" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="disparité-du-taux-effectif-de-gain-à-lemploi-et-rôle-de-la-prime-dactivité"><span class="header-section-number">2.3</span> Disparité du taux effectif de gain à l’emploi et rôle de la prime d’activité</h2>
 <p>Depuis le 1er janvier 2016, la prime d’activité a remplacé le RSA activité et la prime pour l’emploi. Comme les instruments qu’elle remplace, la prime d’activité vise deux objectifs&nbsp;: soutenir l’offre de travail grâce à des incitations financières accrues et compléter les revenus des travailleurs ayant des revenus modestes. La prime pour l’emploi et le RSA activité ont été critiqués pour leur faible efficacité (<span class="citation" data-cites="cahuc2002aquoisert">Cahuc (<a href="#ref-cahuc2002aquoisert" role="doc-biblioref">2002</a>)</span>). Individualisée, la prime pour l’emploi versait de faibles montants à de nombreux <span style="white-space:nowrap">bénéficiaires :</span> trop faible pour être véritablement incitative, elle bénéficiait de plus à des ménages à niveau de vie intermédiaire et non aux plus modestes. Le RSA activité tenait compte de la composition et du revenu du <span style="white-space:nowrap">ménage :</span> il était davantage ciblé sur les travailleurs pauvres et créait des incitations à la reprise d’emploi substantielles et contemporaines. Néanmoins, son efficacité était minée par un non-recours élevé <span style="white-space:nowrap">(68 %,</span> voir <span class="citation" data-cites="domingopucci2014">Domingo et Pucci (<a href="#ref-domingopucci2014" role="doc-biblioref">2014</a>)</span>). Comme le RSA activité, la prime d’activité est familialisée et versée mensuellement, après une déclaration trimestrielle de ressources, et s’adresse aux travailleurs aux revenus modestes. La nouveauté est que la prime d’activité comprend un bonus individuel pour chacune des personnes en emploi dans le foyer, ce qui amplifie les incitations à la reprise d’emploi. Elle est en outre clairement identifiée comme une prestation à destination des personnes exerçant une activité, ce qui évite qu’elle apparaisse stigmatisante aux yeux de ceux qui la perçoivent. Par conséquent, le non-recours est probablement bien plus faible que celui qui était observé pour le RSA activité, bien qu’il n’y ait pas à l’heure actuelle d’estimation précise ( <span class="citation" data-cites="hannafi2022drees">Hannafi <em>et al.</em> (<a href="#ref-hannafi2022drees" role="doc-biblioref">2022</a>)</span>). La formule de calcul de la prime d’activité pour un foyer locataire est la <span style="white-space:nowrap">suivante :</span></p>
-<p><span class="math display">
+<p><span class="math display">\[
 \begin{aligned}
 \text{Prime d'activité du foyer }&amp;=\text{ Montant forfaitaire (selon la situation familiale)}\\
 &amp;+ \text{ bonus d'activité individuels}\\
@@ -490,7 +476,7 @@ Graphique&nbsp;5: Revenu disponible d’une famille avec un enfant gardé par sa
 &amp;- \text{ 39 \% des revenus professionnels}\\
 &amp;- \text{ 100 \% des revenus non professionnels.}
 \end{aligned}
-</span></p>
+\]</span></p>
 <p>Le montant de la prime d’activité versée au foyer est nul si le résultat de ce calcul est inférieur à 15 euros.</p>
 <p>Avec la prime d’activité, le système social et fiscal remplit bien l’objectif qui lui a été <span style="white-space:nowrap">fixé :</span> rendre le travail plus rémunérateur que l’assistance, de façon pérenne et pour toutes les reprises d’emploi. Toutefois, les gains effectifs à la reprise d’emploi sont loin d’être homogènes et le rôle de la prime d’activité pour un travailleur rémunéré au Smic diffère selon les caractéristiques de son ménage.</p>
 <p>Pour les cas que nous avons étudiés, le taux effectif de gain pour le passage de l’inactivité à un emploi à mi-temps au Smic est plus faible que pour un emploi à temps complet. Il varie de 48% à 58% pour une personne seule selon le nombre d’enfants à charge et de 36% à 87% pour une personne vivant en couple selon le montant du revenu du conjoint, sa nature et le nombre d’enfants à charge. Le TEG le plus faible est obtenu avec 3 enfants lorsque le conjoint est salarié au Smic car la reprise d’emploi réduit à la fois les montants d’aides au logement (-174&nbsp;€) et de prime d’activité (-271&nbsp;€). Le gain le plus élevé est obtenu avec un conjoint chômeur et aucun enfant à charge car le couple ne bénéficie initialement que des aides au logement (89&nbsp;€) et n’a donc que cela à perdre.</p>
