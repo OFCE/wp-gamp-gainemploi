@@ -10,7 +10,6 @@ author:
 date: "2025-12-19"    
     
 categories: ["Inégalités","Protection sociale","Emploi"]
-format: html
 editor: visual
 description: "La reprise d'emploi à plein-temps est rémunératrice par rapport aux revenus d'assistance.L’emploi paie plus que l’assistance : s’il ne permet pas toujours de sortir de la pauvreté, c’est que les travailleurs partent de trop bas."
 ---
