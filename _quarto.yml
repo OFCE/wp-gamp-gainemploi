@@ -1,0 +1,45 @@
+project:
+  type: website
+execute:
+  freeze: auto
+website:
+  title: "La reprise d'emploi est-elle rémunératrice?"
+  page-navigation: true
+  site-url: "https://gallegre.github.io/GainEmploi/"
+  repo-url: "https://github.com/gallegre/GainEmploi"
+  reader-mode: false
+  bread-crumbs: true
+  favicon: www/fofce.png
+  page-footer:
+      border: true
+      left: "![](/www/ccby4.png){height='16'}"
+      right: "propulsé par ![](/www/quarto.png){height='16'}"
+  navbar:
+    title: false
+    search: true
+    code-tools: true
+    bakground: "#FEFEFE"
+    logo: www/ofce_m.png
+    logo-alt: "OFCE"
+    logo-href: "https://www.ofce.fr/"
+    right:
+      - text: " "
+        icon: person-circle
+        href: about.html
+      - text: " "
+        icon: github
+        href: https://gallegre.github.io/GainEmploi/
+
+comments:
+  hypothesis: true
+format:
+  ofce-html: default
+  
+author:
+  - name: Guillaume Allègre
+    email: guillaume.allegre@sciencespo.fr
+    affiliation: OFCE, Sciences Po Paris
+  - name: Muriel Pucci
+    email: muriel.pucci@gmail.com
+    affiliation: OFCE & Université Paris 1
+

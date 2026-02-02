@@ -1,11 +1,13 @@
-# DT_GainEmploi
-Document de travail OFCE sur les gains à la reprise d'emploi
-
 La reprise d'emploi est-elle rémunératrice par rapport aux prestations sociales ? 
 
-Méthode
--Nous opérons par cas-type, à partir de la maquette Sofi (2024).
--La maquette est disponible ici : https://github.com/murielpucci/SOFI.
--QMD: Gain Emploi.
--Les résultats sont dans le fichier "Maquette Sofi 2024".
--Les hypothèses des cas-types sont commentées dans le texte. 
+Document de travail OFCE sur les gains à la reprise d'emploi. Site: https://gallegre.github.io/GainEmploi/ 
+
+Méthode. 
+
+Nous opérons par cas-type, à partir de la maquette Sofi (2024).
+
+La maquette est disponible ici : https://github.com/murielpucci/SOFI.
+
+Les résultats utilisés sont dans le dossier data. 
+
+Les hypothèses des cas-types sont commentées dans le texte.
