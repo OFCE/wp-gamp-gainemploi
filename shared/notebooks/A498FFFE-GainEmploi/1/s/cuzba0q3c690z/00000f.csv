@@ -10,5 +10,5 @@
 "0","library(rsdmx) "
 "0",""
 "0","if(knitr::is_html_output()) "
-"0","  update_theme(text = element_text(size = 10)) else  "
+"0","  update_theme(text = element_text(size = 8)) else  "
 "0","    update_theme(text = element_text(size = 8))"

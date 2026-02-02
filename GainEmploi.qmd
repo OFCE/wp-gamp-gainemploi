@@ -15,7 +15,7 @@ citation:
   type: article-journal
   container-title: "Document de travail de l'OFCE"
   issue: 2025-24
-  url: https://https://github.com/gallegre/GainEmploi
+  url: https://gallegre.github.io/GainEmploi/
 annee: 2025
 wp: 24
 date: "2025-11-21"
@@ -45,7 +45,7 @@ library(glue)
 library(rsdmx) 
 
 if(knitr::is_html_output()) 
-  update_theme(text = element_text(size = 10)) else  
+  update_theme(text = element_text(size = 8)) else  
     update_theme(text = element_text(size = 8))
 ```
 
@@ -481,7 +481,8 @@ base<-castyp %>%
     TRUE ~ "Temps plein à 1,5 S"),
     typfam=case_when(isocou=="isolé" & nbenf==1 ~ "Parent isolé",
                            isocou=="couple" & actconj=="1 smic" & nbenf==1 ~ "En couple\nconjoint au smic",
-                     TRUE ~ "autre")
+                     TRUE ~ "autre"),
+    CGNET=-CGNET
   ) %>% 
   filter(typfam!="autre") %>% 
   select(typrev,typfam,CGNET,Ract_conj,Salaire,PF,PL,RSA,PA, RDISP_NET_CG)	
@@ -540,7 +541,7 @@ graph_cmg <- ggplot(basegr %>% filter(name !='RDISP_NET_CG'), aes(fill = name,
        fill = guide_legend(title = NULL, order = 2),
        x = guide_axis(n.dodge=2), color = guide_legend(title = NULL)
   )+
-  scale_y_continuous(expand = c(0, 0), limits = c(0, 4000), breaks = seq(0, 4000, by = 500)) + 
+  # scale_y_continuous(expand = c(0, 0), limits = c(0, 4000), breaks = seq(0, 4000, by = 500)) + 
   ofce_caption(
     source = "législation avril 2024, maquette Sofi https://github.com/murielpucci/SOFI"
     )
