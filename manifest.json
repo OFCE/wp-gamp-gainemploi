@@ -1,0 +1,25 @@
+{
+  "title": "",
+  "authors": [
+    {
+      "name": "Guillaume Allègre",
+      "affiliation": "OFCE, Sciences Po Paris"
+    },
+    {
+      "name": "Muriel Pucci",
+      "affiliation": "OFCE & Université Paris 1"
+    }
+  ],
+  "abstract": "Depuis les réformes instaurant le RSA activité (2008) puis la prime d'activité (2016), l'emploi est toujours plus rémunérateur que l'inactivité. Toutefois, travailler ne garantit pas la sortie de la pauvreté. Cela s'explique notamment par le fait que le revenu minimum versé aux personnes d'âge actif est très faible et maintient la plupart du temps les personnes sans emploi sous le seuil de grande pauvreté : le travail paie plus que l'assistance, mais les travailleurs partent de trop bas. Des pistes de réforme sont proposées permettant de concilier les trois objectifs des pouvoirs publics: faire en sorte que le travail soit toujours rémunérateur ; faire en sorte que le travail protège de la pauvreté ; soutenir le revenu des ménages les plus modestes.",
+  "wp": 24,
+  "annee": 2025,
+  "version": null,
+  "stage": true,
+  "date": "2025-11-21",
+  "date_modified": "2026-08-31",
+  "url": "https://staging.ofce.fr/GainEmploi/",
+  "pdf": "OFCEWP2025-24.pdf",
+  "repo": "https://github.com/gallegre/GainEmploi/",
+  "lang": "fr",
+  "source-repo": "gallegre/GainEmploi"
+}

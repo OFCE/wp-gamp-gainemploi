@@ -17,11 +17,11 @@ lang: fr
 
 format:
   wp-html: default
-  wp-pdf:
+  wp-typst:
     toc: false
-    output-file: "OFCEWP2025-24.pdf"
+    output-file: OFCEWP2025-24.pdf
     tbl-pos: "H"
-    
+
 authors-title: "Autrice et auteur et résumé"
 thanks: ""
 editor: visual
@@ -92,13 +92,9 @@ Dans les cas-types étudiés, le système socio-fiscal actuel garantit que la re
 
 Outre la variation de revenu disponible du ménage, il est également possible de calculer un taux effectif de prélèvement (TEP) qui correspond à la baisse des transferts sociaux (nets d'impôt) par euro supplémentaire de revenu professionnel. Si, lorsque le revenu d'activité augmente de 1000 euros, les transferts sociaux nets baissent de 400 euros on dira que le TEP est de 40%. Dans ce cas, le revenu disponible augmente de 600 euros.
 
-$$
-TEP=\frac{\text{-Variation des transferts sociaux nets}}{\text{Variation du revenu professionnel}}=1-\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}
-$$
+$$TEP=\frac{\text{-Variation des transferts sociaux nets}}{\text{Variation du revenu professionnel}}=1-\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}$$
 
-On peut définir le taux effectif de gain à l'emploi (TEG) comme la part de l'augmentation du revenu professionnel qui se traduit en augmentation du revenu disponible. Si lorsque le revenu d'activité augmente de 1000 euros, le revenu disponible augmente de 600 euros, on dira que le TEG est de 60%. $$
-TEG=\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}
-$$
+On peut définir le taux effectif de gain à l'emploi (TEG) comme la part de l'augmentation du revenu professionnel qui se traduit en augmentation du revenu disponible. Si lorsque le revenu d'activité augmente de 1000 euros, le revenu disponible augmente de 600 euros, on dira que le TEG est de 60%. $$TEG=\frac{\text{Variation du revenu disponible}}{\text{Variation du revenu professionnel}}$$
 :::
 
 Le cas d'une personne seule illustre la façon dont le système socio-fiscal assure que le travail paie mieux que l'assistance, même pour de petites durées de travail. Sans revenus d'activité, cette personne peut percevoir 851 euros de prestations sociales (559 euros de RSA et 292 euros d'allocations logement).
@@ -548,16 +544,14 @@ girafy(graph_cmg)
 
 Depuis le 1er janvier 2016, la prime d'activité a remplacé le RSA activité et la prime pour l'emploi. Comme les instruments qu'elle remplace, la prime d'activité vise deux objectifs : soutenir l'offre de travail grâce à des incitations financières accrues et compléter les revenus des travailleurs ayant des revenus modestes. La prime pour l'emploi et le RSA activité ont été critiqués pour leur faible efficacité (@cahuc2002aquoisert). Individualisée, la prime pour l'emploi versait de faibles montants à de nombreux bénéficiaires : trop faible pour être véritablement incitative, elle bénéficiait de plus à des ménages à niveau de vie intermédiaire et non aux plus modestes. Le RSA activité tenait compte de la composition et du revenu du ménage : il était davantage ciblé sur les travailleurs pauvres et créait des incitations à la reprise d'emploi substantielles et contemporaines. Néanmoins, son efficacité était minée par un non-recours élevé (68 %, voir @domingopucci2014). Comme le RSA activité, la prime d'activité est familialisée et versée mensuellement, après une déclaration trimestrielle de ressources, et s'adresse aux travailleurs aux revenus modestes. La nouveauté est que la prime d'activité comprend un bonus individuel pour chacune des personnes en emploi dans le foyer, ce qui amplifie les incitations à la reprise d'emploi. Elle est en outre clairement identifiée comme une prestation à destination des personnes exerçant une activité, ce qui évite qu'elle apparaisse stigmatisante aux yeux de ceux qui la perçoivent. Par conséquent, le non-recours est probablement bien plus faible que celui qui était observé pour le RSA activité, bien qu'il n'y ait pas à l'heure actuelle d'estimation précise ( @hannafi2022drees). La formule de calcul de la prime d'activité pour un foyer locataire est la suivante :
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \text{Prime d'activité du foyer }&=\text{ Montant forfaitaire (selon la situation familiale)}\\
 &+ \text{ bonus d'activité individuels}\\ 
 &- \text{ aides au logement dans la limite d'un forfait logement}\\ 
 &- \text{ (prestations familiales + minima sociaux)}\\ 
 &- \text{ 39 \% des revenus professionnels}\\ 
 &- \text{ 100 \% des revenus non professionnels.}
-\end{aligned}
-$$
+\end{aligned}$$
 
 Le montant de la prime d'activité versée au foyer est nul si le résultat de ce calcul est inférieur à 15 euros.
 

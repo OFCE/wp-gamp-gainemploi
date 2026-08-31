@@ -1,15 +1,15 @@
 project:
-  type: website
+  type: ofce-website
 execute:
   freeze: auto
 website:
-  title: "La reprise d'emploi est-elle rémunératrice?"
   page-navigation: true
-  site-url: "https://gallegre.github.io/GainEmploi/"
-  repo-url: "https://github.com/gallegre/GainEmploi"
+  site-url: https://www.ofce.fr/
+  repo-url: https://github.com/gallegre/GainEmploi/
+  site-path: 2025/24
   reader-mode: false
   bread-crumbs: true
-  favicon: www/fofce.png
+  favicon: www/fofce-wp.png
   page-footer:
       border: true
       left: "![](/www/ccby4.png){height='16'}"
@@ -19,9 +19,9 @@ website:
     search: true
     code-tools: true
     bakground: "#FEFEFE"
-    logo: www/ofce_m.png
-    logo-alt: "OFCE"
-    logo-href: "https://www.ofce.fr/"
+    logo: /www/ofce.png
+    logo-alt: logo de l'OFCE
+    logo-href: https://www.ofce.fr/
     right:
       - text: " "
         icon: person-circle
@@ -29,12 +29,69 @@ website:
       - text: " "
         icon: github
         href: https://gallegre.github.io/GainEmploi/
+    left:
+      - text: L'OFCE
+        menu:
+          - text: À propos
+            href: https://www.ofce.fr/ofce/ofce.html
+          - text: Rapport d'activité
+            href: https://www.ofce.fr/ofce/rapports.html
+          - text: Réseaux de recherche
+            href: https://www.ofce.fr/ofce/reseaux.html
+          - text: Nous rejoindre
+            href: https://www.ofce.fr/ofce/recrute.html
+          - text: Contact
+            href: https://www.ofce.fr/ofce/contact.html
+          - text: Mentions légales
+            href: https://www.ofce.fr/legal/mentions_legales.html
+          - text: Conditions générales
+            href: https://www.ofce.fr/legal/conditions_generales.html
+          - text: Politique des cookies
+            href: https://www.ofce.fr/legal/cookies.html
+      - text: Blog
+        href: https://www.ofce.fr/blog2024/
+      - text: Publications
+        menu:
+          - text: Policy Briefs
+            href: https://www.ofce.fr/publications/policy.html
+          - text: Documents de travail
+            href: https://www.ofce.fr/publications/working_papers.html
+          - text: Etudes & Rapports
+            href: https://www.ofce.fr/publications/rapports.html
+          - text: Revue de l'OFCE
+            href: https://www.ofce.fr/publications/revue.html
+      - text: Prévisions
+        menu:
+          - text: Prévision France & Monde
+            href: https://www.ofce.fr/prev/derniere/
+          - text: Nowcast
+            href: https://www.ofce.fr/nowcast/
+          - text: Anciennes prévisions
+            href: https://www.ofce.fr/indic_prev/prevision.html
+      - text: Outils & Ressources
+        menu:
+          - text: DEBTWATCH
+            href: https://ofce.shinyapps.io/debtwatchr/
+          - text: Modèle ThreeME
+            href: https://www.ofce.fr/recherche/threeme.html
+          - text: Modèle Evamodi
+            href: https://www.ofce.fr/recherche/evamodi.html
+    tools:
+      - icon: envelope
+        href: '#'
+      - icon: bluesky
+        href: https://bsky.app/profile/ofce.bsky.social
+      - icon: linkedin
+        href: https://www.linkedin.com/company/ofce/posts/
+      - icon: facebook
+        href: https://www.facebook.com/ofcesciencespo/
+  draft-mode: visible
 
 comments:
-  hypothesis: true
+  hypothesis: false
 format:
   ofce-html: default
-  
+
 author:
   - name: Guillaume Allègre
     email: guillaume.allegre@sciencespo.fr
@@ -42,4 +99,16 @@ author:
   - name: Muriel Pucci
     email: muriel.pucci@gmail.com
     affiliation: OFCE & Université Paris 1
-
+lang: fr
+ofce_wp: true
+citation:
+  type: article-journal
+  container-title: "Document de travail de l'OFCE"
+  issue: 2025-24
+  url: https://www.ofce.fr/wp/2025/24/
+date: "2025-11-21"
+date-modified: "2025-11-21"
+draft: true
+stage-target: gh-pages
+wp: 24
+annee: 2025
