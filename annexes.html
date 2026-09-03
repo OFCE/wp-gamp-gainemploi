@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,13 +14,10 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -47,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1352f9db2132ed6d9c4208da9f3ea9cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8fed3dfe6b587c089b51ffb784f7ced3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-94e0e26ad3d24623462d43699c228e93.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4019ede1a2dcb8c2747465838b65f51c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -110,70 +107,134 @@ cookieconsent.run({
 </script> 
   
 <script>
+
 // État actif de la navbar par préfixe d'URL : un item est actif si le premier
+
 // segment de son href (URLs racine, ex. /blog2024/, /prev/derniere/) coïncide
+
 // avec celui de la page courante. Pour un item de sous-menu, c'est l'entrée
+
 // parente du menu qui est surlignée. Fonctionne pour tous les sites, sans
+
 // texte en dur.
+
 document.addEventListener('DOMContentLoaded', function () {
+
   var currentPath = window.location.pathname;
 
+
+
   function firstSegment(pathname) {
+
     var match = pathname.match(/^\/([^\/]+)/);
+
     return match ? match[1] : '';
+
   }
+
+
 
   function isActive(link) {
+
     var href = link.getAttribute('href');
+
     if (!href || href === '#') return false;
+
     if (link.host !== window.location.host) return false;
+
     if (link.pathname === '/') {
+
       return currentPath === '/' || currentPath === '/index.html';
+
     }
+
     return firstSegment(link.pathname) === firstSegment(currentPath) &&
+
       firstSegment(currentPath) !== '';
+
   }
 
+
+
   document.querySelectorAll('.navbar-nav .nav-item').forEach(function (item) {
+
     var navLink = item.querySelector('.nav-link');
+
     if (!navLink) return;
+
     var links = item.classList.contains('dropdown')
+
       ? item.querySelectorAll('.dropdown-menu .dropdown-item')
+
       : [navLink];
+
     var active = Array.prototype.some.call(links, isActive);
+
     if (active) navLink.classList.add('active');
+
   });
+
 });
+
 </script>
 <script>
+
   /* === Encadrés preview === */
+
 document.addEventListener('DOMContentLoaded', function () {
+
   document.querySelectorAll('.callout-tip').forEach(function (el) {
+
     var btnOpen = document.createElement('button');
+
     btnOpen.className = 'enc-preview-btn enc-open-btn';
+
     btnOpen.textContent = '▼ Lire la suite\u2026';
+
     btnOpen.addEventListener('click', function () {
+
       el.classList.add('enc-expanded');
+
     });
+
+
 
     var btnClose = document.createElement('button');
+
     btnClose.className = 'enc-preview-btn enc-close-btn';
+
     btnClose.textContent = '▲ Réduire';
+
     btnClose.addEventListener('click', function () {
+
       el.classList.remove('enc-expanded');
+
     });
 
+
+
     var bodyContainer = el.querySelector('.callout-body-container');
+
     if (bodyContainer) {
+
       bodyContainer.insertAdjacentElement('afterend', btnClose);
+
       bodyContainer.insertAdjacentElement('afterend', btnOpen);
+
     } else {
+
       el.appendChild(btnOpen);
+
       el.appendChild(btnClose);
+
     }
+
   });
+
 });
+
 </script>
+
 <meta name="quarto:status" content="draft">
 
 
@@ -352,22 +413,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <div>
   <div class="quarto-title-meta-contents">
-        <span class="badge-draft" id="ofce-badge-draft">Version préliminaire ()·ne pas citer·ne pas diffuser</span>
+        <span class="badge-draft">Version préliminaire (), ne pas citer, ne pas diffuser</span>
       </div>
 </div>
-<script>
-(function () {
-  fetch("push-count.json")
-    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function (data) {
-      var el = document.getElementById("ofce-badge-draft");
-      if (el && data && data.count != null) {
-        el.innerHTML += "<br>&#8634; d\u00e9ploiement n\u00b0" + data.count;
-      }
-    })
-    .catch(function () { /* push-count.json absent (ex. production) — ignoré */ });
-})();
-</script>
+
 
   <details class="details-box">
           <summary class="quarto-title-meta-heading"><b>Auteurs&amp;résumé</b></summary>
@@ -857,13 +906,13 @@ Allègre G., Pucci M. (2025). <span>«&nbsp;<a href="https://www.ofce.fr/wp/2025
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="./www/ccby4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./www/ccby4.png" height="16"></a></p>
+<p><a href=".\www/ccby4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src=".\www/ccby4.png" height="16"></a></p>
 </div>   
     <div class="nav-footer-center">
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-<p>propulsé par <img src="./www/quarto.png" height="16"></p>
+<p>propulsé par <img src=".\www/quarto.png" height="16"></p>
 </div>
   </div>
 </footer>

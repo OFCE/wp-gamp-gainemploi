@@ -16,10 +16,10 @@
   "version": null,
   "stage": true,
   "date": "2025-11-21",
-  "date_modified": "2026-09-02",
+  "date_modified": "2026-09-03",
   "url": "https://staging.ofce.fr/wp-gamp-gainemploi/",
   "pdf": "OFCEWP2025-24.pdf",
-  "repo": "https://github.com/OFCE/wp-gamp-gainemploi/",
+  "repo": "https://github.com/gallegre/GainEmploi/",
   "lang": "fr",
   "source-repo": "OFCE/wp-gamp-gainemploi"
 }
