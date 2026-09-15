@@ -56,6 +56,7 @@ contributes:
         tip: true
       shortcodes:
         - fontawesome
+      citeproc: true
       csl: ../ofce/csl/revue-francaise-de-gestion.csl
     html:
       theme:
@@ -63,7 +64,7 @@ contributes:
         - ../ofce/sass/default.scss
         - ../ofce/sass/rules.scss
         - ../ofce/ofce.scss
-      include-in-header: 
+      include-in-header:
         - ../ofce/html/url-nav-active.html
         - ../ofce/html/encadre.js
       toc-location: left
@@ -84,6 +85,7 @@ contributes:
       template-partials:
         - html/title-metadata.html
         - html/title-block.html
+      html-table-processing: none
     pdf:
       documentclass: scrreprt
       toc-depth: 1
@@ -107,7 +109,7 @@ contributes:
         - pdf/before-body.tex
     typst:
       mainfont: Open Sans
-      keep-typ: true
+      keep-typ: false
       toc: false
       callout-icon: false
       papersize: a4

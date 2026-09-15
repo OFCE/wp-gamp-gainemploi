@@ -18,6 +18,7 @@ contributes:
           toc-title: "Sur cette page"
           authors-title: "Autrices, auteurs & résumé"
           draft: "Préliminaire"
+          callout-tip-title: "Encadré"
         en:
           section-title-references: "Bibilography"
           title-block-author-single: "Author"
@@ -53,8 +54,7 @@ contributes:
         - collapse-callout
         - nbsp
         - quarto
-      collapse-callout:
-        tip: true
+        - wordcount
       shortcodes:
         - fontawesome
       csl: csl/revue-francaise-de-gestion.csl
@@ -74,6 +74,7 @@ contributes:
       link-external-icon: true
       mainfont: Open Sans
       toc-location: left
+      toc-depth: 3
       number-depth: 3
       html-math-method: katex
       fig-dpi: 1200
@@ -87,6 +88,7 @@ contributes:
       hide-description: true
       template-partials:
         - html/title-metadata.html
+      html-table-processing: none
     pdf:
       documentclass: scrartcl
       toc-depth: 1

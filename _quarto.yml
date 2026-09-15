@@ -5,7 +5,7 @@ execute:
 website:
   page-navigation: true
   site-url: https://www.ofce.fr/
-  repo-url: https://github.com/gallegre/GainEmploi/
+  repo-url: https://github.com/OFCE/wp-gamp-gainemploi/
   site-path: 2025/24
   reader-mode: false
   bread-crumbs: true
@@ -88,9 +88,10 @@ website:
   draft-mode: visible
 
 comments:
-  hypothesis: false
+  hypothesis: true
 format:
-  ofce-html: default
+  # ofce-html: default
+  wp-html: default
 
 author:
   - name: Guillaume Allègre
@@ -108,5 +109,8 @@ citation:
   url: https://www.ofce.fr/wp/2025/24/
 date: "2025-11-21"
 date-modified: "2025-11-21"
-draft: true
+draft: false
 stage-target: gh-pages
+annee: 2025
+wp: 24
+stable_url: https://www.ofce.fr/wp/2025/24/

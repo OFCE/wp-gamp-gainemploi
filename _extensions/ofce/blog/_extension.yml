@@ -63,7 +63,7 @@ contributes:
         - ../ofce/sass/default.scss
         - ../ofce/sass/rules.scss
         - ../ofce/ofce.scss
-      include-in-header: 
+      include-in-header:
         - ../ofce/html/url-nav-active.html
       number-sections: false
       lightbox: true
@@ -81,6 +81,7 @@ contributes:
       hide-description: true
       template-partials:
         - html/title-metadata.html
+      html-table-processing: none
     pdf:
       documentclass: scrartcl
       toc-depth: 1
@@ -98,7 +99,7 @@ contributes:
       logo2: ../ofce/img/sciencespo.png
     typst:
       mainfont: Open Sans
-      keep-typ: true
+      keep-typ: false
       toc: false
       callout-icon: false
       papersize: a4

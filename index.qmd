@@ -9,8 +9,8 @@ citation:
   container-title: "Document de travail de l'OFCE"
   issue: 2025-24
   url: https://https://github.com/gallegre/GainEmploi
-annee: 2025
-wp: 24
+# annee: 2025
+# wp: 24
 date: "2025-11-21"
 date-modified: "2025-11-21"
 lang: fr
@@ -26,6 +26,11 @@ authors-title: "Autrice et auteur et résumé"
 thanks: ""
 editor: visual
 bibliography: references.bib
+format-links:
+  - typst
+  - format: wp-typst
+    text: OFCEWP2025-24.pdf
+    icon: file-pdf
 ---
 
 ```{r library, include=FALSE}

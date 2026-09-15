@@ -3,7 +3,6 @@ author: Anissa Saumtally et Xavier Timbeau
 version: 0.6.0
 quarto-required: ">=1.9.38"
 contributes:
-
   formats:
     common:
       toc: true
@@ -16,6 +15,7 @@ contributes:
           title-block-author-plural: "Par"
           title-block-published: "Publié le"
           title-block-modified: "Modifié le"
+          callout-tip-title: "Encadré"
           toc-title: "Sur cette page"
           draft: "Préliminaire"
         en:
@@ -52,9 +52,8 @@ contributes:
         - collapse-callout
         - nbsp
         - quarto
+        - wordcount
       quot-lang: fr
-      collapse-callout:
-        tip: true
       shortcodes:
         - fontawesome
       csl: ../ofce/csl/revue-francaise-de-gestion.csl
@@ -79,7 +78,7 @@ contributes:
       lightbox: true
       link-external-icon: true
       mainfont: Arimo
-      toc-depth: 2
+      toc-depth: 3
       toc-location: left
       fig-dpi: 1200
       fig-format: svg
@@ -94,6 +93,7 @@ contributes:
         - html/title-block.html
         - html/title-metadata.html
         - html/toc.html
+      html-table-processing: none
 
     pdf:
       toc-depth: 1
@@ -108,9 +108,9 @@ contributes:
         - right = 2.5cm
       linestretch: 1.25
       extra_dependencies: ["float"]
-      fig-dpi: 600
+      fig-dpi: 1200
       fig-width: 5
-      fig-format: svg
+      fig-format: png
       callout-icon: false
       logo2: ../ofce/img/sciencespo.png
       template-partials:
@@ -123,13 +123,16 @@ contributes:
 
     typst:
       mainfont: Arimo
-      keep-typ: true
-      toc: false
+      keep-typ: false
+      toc: true
+      toc-depth: 1
       callout-icon: false
       section-numbering: 1.1.a
       citeproc: true
       papersize: a4
       logo: false
+      thanks-title-fr: "Remerciements"
+      thanks-title-en: "Acknowledgements"
       template-partials:
         - typst/typst-template.typ
         - typst/typst-show.typ
