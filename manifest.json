@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "ofce-wp-2025-24-fr",
+  "translation_id": null,
+  "institution": "ofce",
+  "type": "working-paper",
+  "media": "html",
+  "lang": "fr",
+  "title": "La reprise d'emploi est-elle toujours rémunératrice?",
+  "authors": [
+    "Guillaume Allègre",
+    "Muriel Pucci"
+  ],
+  "abstract": "Depuis les réformes instaurant le RSA activité (2008) puis la prime d'activité (2016), l'emploi est toujours plus rémunérateur que l'inactivité. Toutefois, travailler ne garantit pas la sortie de la pauvreté. Cela s'explique notamment par le fait que le revenu minimum versé aux personnes d'âge actif est très faible et maintient la plupart du temps les personnes sans emploi sous le seuil de grande pauvreté : le travail paie plus que l'assistance, mais les travailleurs partent de trop bas. Des pistes de réforme sont proposées permettant de concilier les trois objectifs des pouvoirs publics: faire en sorte que le travail soit toujours rémunérateur ; faire en sorte que le travail protège de la pauvreté ; soutenir le revenu des ménages les plus modestes.",
+  "categories": [],
+  "keywords": [
+    "Assistance, prime d'activité, smic, gains à l'emploi, trappes à inactivité"
+  ],
+  "jel": [],
+  "date_published": "2025-11-21",
+  "date_modified": "2026-11-11",
+  "url": "https://www.ofce.fr/wp/2025/24/",
+  "pdf": "https://www.ofce.fr/wp/2025/24/OFCEWP2025-24.pdf",
+  "repo": "https://github.com/OFCE/wp-gamp-gainemploi/",
+  "auto_update": true,
+  "wp": 24,
+  "annee": 2025,
+  "version": null,
+  "stage": false,
+  "pdf-path": "wp/2025/24/OFCEWP2025-24.pdf",
+  "source-repo": "OFCE/wp-gamp-gainemploi",
+  "ofceweb-version": "1.0.6"
+}
