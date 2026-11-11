@@ -10,7 +10,7 @@ contributes:
       french: true
       language:
         fr:
-          section-title-references: "Bibliograhie"
+          section-title-references: "Bibliographie"
           title-block-author-single: "Par"
           title-block-author-plural: "Par"
           title-block-published: "Publié le"
@@ -19,7 +19,7 @@ contributes:
           toc-title: "Sur cette page"
           draft: "Préliminaire"
         en:
-          section-title-references: "Bibilography"
+          section-title-references: "Bibliography"
           title-block-author-single: "Author"
           title-block-author-plural: "Authors"
           title-block-published: "Published on"
@@ -46,7 +46,7 @@ contributes:
           title-delim: "**.**"
         en:
           title-delim: "**.**"
-      logo: ../ofce/img/logo.png
+      logo: ../ofce/img/IFE-OFCE_logo_noir.png
       filters:
         - quotes
         - collapse-callout
@@ -124,6 +124,8 @@ contributes:
     typst:
       mainfont: Arimo
       keep-typ: false
+      fig-format: svg
+      fig-dpi: 1200
       toc: true
       toc-depth: 1
       callout-icon: false

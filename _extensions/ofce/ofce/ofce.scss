@@ -69,6 +69,14 @@ h3.listing-title {
   font-size: 0.8rem !important;
 }
 
+.sidebar nav[role=doc-toc]>ul {
+    font-size: .8rem
+}
+
+.sidebar nav[role=doc-toc]>h2,.sidebar nav[role=doc-toc]>.h2 {
+    font-size: .8rem
+}
+
 .header-section-number,
 .chapter-number {
   font-weight: bold;
@@ -413,7 +421,7 @@ div.callout-tip {
   border: none;
   border-radius: 5px;
   color: $link-color;
-  text-align: center;
+  text-align: left;
   margin: 6px 0;
   padding: 4px 8px;
 

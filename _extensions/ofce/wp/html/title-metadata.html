@@ -34,12 +34,6 @@ $if(draft)$
 $endif$
 
 $if(author)$
-  <details class="details-box">
-    $if(french)$
-      <summary class ="quarto-title-meta-heading"><b>Auteurs&résumé</b></summary>
-    $else$
-      <summary class ="quarto-title-meta-heading"><b>Authors&Summary</b></summary>
-    $endif$
     $if(by-affiliation/first)$
     <div class="quarto-title-meta-author">
       <div class="quarto-title-meta-heading">$labels.authors$</div>
@@ -129,15 +123,29 @@ $if(author)$
       </div>
       $endif$
 
-      $if(keywords)$
+    </div>
+
+    $if(keywords)$
       <div>
-        <div class="keywords">
+        <div class="abstract keywords">
           <div class="quarto-title-meta-heading">$labels.keywords$</div>
-          <p>$for(keywords)$$it$$sep$, $endfor$</p>
+          $for(keywords)$$it$$sep$, $endfor$
         </div>
       </div>
-      $endif$
-    </div>
+    $endif$
+
+    $if(jel)$
+      <div>
+        <div class="abstract jel">
+          $if(french)$
+          <div class="quarto-title-meta-heading">Codes JEL</div>
+          $else$
+          <div class="quarto-title-meta-heading">JEL codes</div>
+          $endif$
+          $for(jel)$$it$$sep$, $endfor$
+        </div>
+      </div>
+    $endif$
 
     $if(abstract)$
       <div>
@@ -156,5 +164,4 @@ $if(author)$
         </div>
       </div>
     $endif$
-  </details>
 $endif$

@@ -20,17 +20,31 @@ $if(description)$
   abstract: [$description$],
 $endif$
 $endif$
+$if(keywords)$
+  keywords: [$for(keywords)$$it$$sep$, $endfor$],
+$endif$
+$if(jel)$
+  jel: [$for(jel)$$it$$sep$, $endfor$],
+$endif$
+$if(citation)$
+  citation: (
+    type: "$citation.type$",
+    container-title: "$citation.container-title$",
+    doi: "$citation.doi$",
+    url: "$citation.url$"
+  ),
+$endif$
 $if(annee)$
   year: [$annee$],
 $endif$
 $if(thanks)$
   thanks: [$thanks$],
 $endif$
-$if(site-url)$
-  site-url: "$site-url$",
+$if(stable-url)$
+  stable-url: "$stable-url$",
 $else$
 $if(citation.url)$
-  site-url: "$citation.url$",
+  stable-url: "$citation.url$",
 $endif$
 $endif$
 $if(thanks-title-fr)$
@@ -38,6 +52,9 @@ $if(thanks-title-fr)$
 $endif$
 $if(thanks-title-en)$
   thanks-title-en: "$thanks-title-en$",
+$endif$
+$if(institut)$
+  institut: "$institut$",
 $endif$
   number:[$wp$],
 $if(draft)$
@@ -52,6 +69,9 @@ $endif$
 $if(date)$
   first_publish: [$date$],
 $endif$
+$if(date-modified)$
+  modified: "$date-modified$",
+$endif$
 
 $if(lang)$
   language: "$lang$",
@@ -65,6 +85,9 @@ $if(title)$
 $endif$
 $if(subtitle)$
   subtitle: [$subtitle$],
+$endif$
+$if(institut)$
+  institut: "$institut$",
 $endif$
   number:[$wp$],
 $if(draft)$
@@ -92,6 +115,9 @@ $endif$
   ),
 $if(date)$
   first_publish: [$date$],
+$endif$
+$if(date-modified)$
+  modified: "$date-modified$",
 $endif$
 $if(leading)$
   leading: $leading$,

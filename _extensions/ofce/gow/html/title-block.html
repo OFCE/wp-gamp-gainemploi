@@ -2,8 +2,9 @@ $if(title)$
 <header id="title-block-header" class="quarto-title-block default$if(title-block-categories)$ quarto-title-block-categories$endif$">
 
 <div class="quarto-title">
+<h1 class="title">$title$</h1>
 $if(nb)$
-<h1 class="title ecographe-number">L'ÉcoGraphe n°$nb$ (<span id="pub-year"></span>)</h1>
+<p class="subtitle ecographe-number">L'ÉcoGraphe n°$nb$ (<span id="pub-year"></span>)</p>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var dateEl = document.querySelector('.date');
@@ -20,8 +21,6 @@ $if(nb)$
     });
   });
 </script>
-$else$
-<h1 class="title">$title$</h1>
 $endif$
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
